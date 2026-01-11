@@ -17,10 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      {/* Klassen für globalen Hintergrund und Textfarbe zur Sicherheit auch hier */}
-      <body
-        className={`${inter.className} bg-zinc-950 text-zinc-100 antialiased`}
-      >
+      {/* ÄNDERUNG: 'bg-zinc-950' und 'text-zinc-100' wurden entfernt. 
+         Die Farben werden nun dynamisch über 'globals.css' (body-Rule) gesteuert.
+      */}
+      <body className={`${inter.className} antialiased`}>
         <Navbar />
         {children}
       </body>
